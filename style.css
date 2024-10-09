@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.myDiv {
+    border: 5px outset blue;
+    background-color: rgb(144, 205, 40);
+    text-align: center;
+}
+
+ h1{
+    color: chocolate;
+    margin: 20px 0px;
+ }
+
+body > section > div > h1{
+
+        text-align: justify;
+        background-color: rgb(106, 71, 139);
+        color: white;
+        display: inline;
+        border-radius: 10px;
+        font-family: 'Courier New', Courier, monospace;
+    
+} 
+
+#pExplication{
+    color: brown;
+} 
+
+body{
+    background-color: blanchedalmond;
+}
+
+table, th, td {
+    border: 1px solid rgb(97, 42, 165);
+    background-color: rgb(236, 193, 193);
+    tr :hover{background-color: coral;}
+
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: justify;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.mi-div{
+    width: 700px;
+    height: 300px;
+    border: 4px dotted rgb(205, 171, 122);
+    background-image: url("https://radiovillamaria.com.ar/archivos/img/m/175643_1716898744_497.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.mySBDiv{
+    width: 400px;
+    height: 300px;
+    border: 3px outset rgb(164, 147, 180);
+    background-color: rgb(169, 200, 156);
+    text-align: center;
+    color:white;
+    text-shadow: 3px 3px 2px black;
+    box-shadow: 5px 10px rgb(97, 42, 165);
+}
+
+.pieFotoDiv{
+    font-size: small;
+    color: rgb(12, 11, 11);
+    text-shadow: 2px 2px 2px rgb(97, 91, 103);
+}
+
+.divCenter{
+    text-align: center;
+}
+
+.in-block{
+    display: inline-block;
+}
