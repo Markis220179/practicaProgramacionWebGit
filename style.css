@@ -1,8 +1,8 @@
-
-*{
+* {
     margin: 0;
-    padding: 0;
-}
+    padding: 2px;
+    box-sizing: border-box;
+  }
 
 .myDiv {
     border: 5px outset blue;
@@ -13,6 +13,11 @@
  h1{
     color: chocolate;
     margin: 20px 0px;
+    height: 10vh;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
 body > section > div > h1{
@@ -38,6 +43,7 @@ table, th, td {
     border: 1px solid rgb(97, 42, 165);
     background-color: rgb(236, 193, 193);
     tr :hover{background-color: coral;}
+   
 
 }
 
@@ -78,9 +84,97 @@ th {
 }
 
 .divCenter{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 .in-block{
     display: inline-block;
+    
 }
+
+.table{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+}
+
+.form{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.ul-orientation{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.div-orientation-ol{
+    display: flex;
+}
+
+.div-orientation-gif{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.div-cointainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+  
+  main {
+    background-color: rgb(49, 234, 95);
+    width: 50%;
+    padding: 10px;
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  section {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .aside-cointainer{
+    background-color: darkseagreen;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+  
+#div-center-orientation{
+    background-color: rgb(255, 177, 75);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+ 
+}
+
+  .div-color{
+    background-color: aquamarine;
+  }
