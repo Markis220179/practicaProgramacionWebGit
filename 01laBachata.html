@@ -16,6 +16,12 @@
     <div class="divCenter">
         <h1>La bachata</h1>
     </div>
+    <div class="divCenter">
+        <button id="btnColor">Cambiar Color de Fondo</button>
+        <button id="btnToggleText">Mostrar/Ocultar Texto</button>
+        <button id="btnChangeContent">Cambiar Contenido</button>
+    </div>
+    
     <ul class="ul-orientation">
         <li><a href="01laBachata.html">Info de bachata(Pagina Actual)</a></li>
         <li><a href="02Clases.html">Clases: Dias y Horarios</a></li>
@@ -101,6 +107,35 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
     </div>
     <br><br><br>
+    <script>
+    const btnColor = document.getElementById("btnColor");
+    const btnToggleText = document.getElementById("btnToggleText");
+    const btnChangeContent = document.getElementById("btnChangeContent");
+    const pExplication = document.getElementById("pExplication");
+
+    
+    btnColor.addEventListener("click", () => {
+        document.body.style.backgroundColor = 
+            document.body.style.backgroundColor === "blanchedalmond" 
+            ? "lightblue" 
+            : "blanchedalmond";
+    });
+
+    
+    btnToggleText.addEventListener("click", () => {
+        pExplication.style.display = 
+            pExplication.style.display === "none" 
+            ? "block" 
+            : "none";
+    });
+
+    
+    btnChangeContent.addEventListener("click", () => {
+        pExplication.textContent = 
+            "¡El contenido ha cambiado! La bachata es pasión y movimiento.";
+    });
+</script>
+
 </body>
 
 </html>

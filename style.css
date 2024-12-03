@@ -1,151 +1,76 @@
 * {
     margin: 0;
-    padding: 2px;
+    padding: 0;
     box-sizing: border-box;
-  }
-
-.myDiv {
-    border: 5px outset blue;
-    background-color: rgb(144, 205, 40);
-    text-align: center;
 }
 
- h1{
+body {
+    background-color: blanchedalmond;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
     color: chocolate;
-    margin: 20px 0px;
-    height: 10vh;
-    min-height: fit-content;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
- }
-
-body > section > div > h1{
-
-        text-align: justify;
-        background-color: rgb(106, 71, 139);
-        color: white;
-        display: inline;
-        border-radius: 10px;
-        font-family: 'Courier New', Courier, monospace;
-    
-} 
-
-#pExplication{
-    color: brown;
-} 
-
-body{
-    background-color: blanchedalmond;
 }
 
-table, th, td {
-    border: 1px solid rgb(97, 42, 165);
-    background-color: rgb(236, 193, 193);
-    tr :hover{background-color: coral;}
-   
-
-}
-
-th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: justify;
-    background-color: #04AA6D;
-    color: white;
-}
-
-.mi-div{
-    width: 700px;
-    height: 300px;
-    border: 4px dotted rgb(205, 171, 122);
-    background-image: url("https://radiovillamaria.com.ar/archivos/img/m/175643_1716898744_497.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+h2 {
     color: white;
     text-shadow: 2px 2px 2px black;
 }
 
-.mySBDiv{
-    max-width: 400px;
+h3 {
+    color: #444;
+}
+
+p {
     font-size: 16px;
-    line-height: 1.5;
-    width: 400px;
-    height: 300px;
-    border: 3px outset rgb(164, 147, 180);
-    background-color: rgb(169, 200, 156);
-    text-align: center;
-    color:white;
-    text-shadow: 3px 3px 2px black;
-    box-shadow: 5px 10px rgb(97, 42, 165);
-    overflow: scroll;
+    line-height: 1.6;
+    text-align: justify;
 }
 
-.divCenter{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
+#pExplication {
+    color: brown;
 }
 
-#divTitulo{
-    border: 5px outset rgb(128, 128, 169);
-    background-color: rgb(100, 108, 54);
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-}
 
-#h1-color{
-    color: rgb(196, 204, 212);
-}
-
-.in-block{
-    display: inline-block;
-    
-}
-
-.table{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-}
-
-.form{
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: center;
-}
-
-.ul-orientation{
+.ul-orientation {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
-
+    list-style-type: square;
 }
 
-.div-orientation-ol{
+.ul-orientation li {
+    margin: 10px 0;
+}
+
+
+.divCenter {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.div-orientation-gif{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.div-cointainer{
+.div-cointainer, #div-trhee-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
 }
 
 .div-container-mejorado {
@@ -160,21 +85,53 @@ th {
     align-items: center;
 }
 
-#div1 {
-    font-size: small;
-    color: rgb(12, 11, 11);
-    text-shadow: 2px 2px 2px rgb(97, 91, 103);
-    font-style: italic;
-    text-align: center;
-    max-width: 400px;
-    display: flex;
+
+button {
+    border: 2px solid #04AA6D;
+    background-color: #fff;
+    color: #04AA6D;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#div2 {
+button:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+table, th, td {
+    border: 1px solid rgb(97, 42, 165);
+    background-color: rgb(236, 193, 193);
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+.mi-div {
+    width: 700px;
+    height: 300px;
+    border: 4px dotted rgb(205, 171, 122);
+    background-image: url("https://radiovillamaria.com.ar/archivos/img/m/175643_1716898744_497.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.mySBDiv {
     max-width: 400px;
     font-size: 16px;
     line-height: 1.5;
     width: 400px;
+    height: 300px;
     border: 3px outset rgb(164, 147, 180);
     background-color: rgb(169, 200, 156);
     text-align: center;
@@ -183,57 +140,75 @@ th {
     box-shadow: 5px 10px rgb(97, 42, 165);
     overflow: scroll;
 }
-  
-  main {
+
+.div-color {
+    background-color: aquamarine;
+}
+
+.div-noticia {
+    color: gold;
+    background-color: rgb(141, 147, 102);
+}
+
+.divCenter button:hover {
+    transform: scale(1.05);
+}
+
+.div-orientation-ol, .div-orientation-gif {
+    display: flex;
+    align-items: center;
+}
+
+.div-orientation-gif {
+    flex-direction: row-reverse;
+}
+
+.divCenter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#div-center-orientation {
+    background-color: rgb(255, 177, 75);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.div-orientation-ol ol {
+    padding: 10px;
+    margin: 0;
+    list-style-type: decimal;
+}
+
+
+.myDiv {
+    border: 5px outset blue;
+    background-color: rgb(144, 205, 40);
+    text-align: center;
+}
+
+main {
     background-color: rgb(49, 234, 95);
     width: 100%;
     height: 95vh;
     display: flex;
     justify-content: center;
+}
 
-  }
-  
-  section {
+section {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
-  }
-  
-#div-center-orientation{
-    background-color: rgb(255, 177, 75);
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
- 
 }
-
-#div-trhee-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-  .div-color{
-    background-color: aquamarine;
-  }
-
-  .div-noticia{
-    color: gold;
-    background-color: rgb(141, 147, 102);
-  }
 
 .titulo {
-    text-align: center; 
+    text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
-  }
-  
-
-
-  
+}
