@@ -110,6 +110,12 @@ th,
 td {
     border: 1px solid rgb(97, 42, 165);
     background-color: rgb(236, 193, 193);
+
+    tr :hover {
+        background-color: coral
+    }
+
+    ;
 }
 
 th {
